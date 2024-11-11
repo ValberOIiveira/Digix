@@ -12,3 +12,4 @@ C:\Users\valberoliveira\Documents\Curso_C#\Recursao\obj\Debug\net8.0\refint\Recu
 C:\Users\valberoliveira\Documents\Curso_C#\Recursao\obj\Debug\net8.0\Recursao.pdb
 C:\Users\valberoliveira\Documents\Curso_C#\Recursao\obj\Debug\net8.0\Recursao.genruntimeconfig.cache
 C:\Users\valberoliveira\Documents\Curso_C#\Recursao\obj\Debug\net8.0\ref\Recursao.dll
+C:\Users\valberoliveira\Documents\Curso_C#\Recursao\obj\Debug\net8.0\Recursao.sourcelink.json
