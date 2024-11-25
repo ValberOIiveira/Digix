@@ -8,25 +8,25 @@ namespace DadosAbstratos
         public class Nodo
         {
             public int Valor;
-            public Nodo Proximo;
+            public Nodo? Proximo;
 
             public Nodo(int valor)
             {
-                Valor = valor;
-                Proximo = null;
+                Valor = valor; 
+                Proximo = null;      
             }
         }
 
         // Define a classe da lista encadeada
         public class ListaEncadeadaComDelegate
         {
-            private Nodo cabeca;
+            private Nodo ?cabeca;
 
             // Delegate para ações sobre os elementos
             public delegate void FuncaoComDelegate(int valor);
 
             // Método para inserir um valor na lista
-            public void Inserir(int valor)
+             public void Inserir(int valor)
             {
                 Nodo novoNodo = new Nodo(valor);
                 if (cabeca == null)
