@@ -71,40 +71,49 @@
 //             }
 //         }
 
+//         static void Reverter()
+//         {
+//             int[] pilhaAux1 = new int[pilha.Length];
+//             int[] pilhaAux2 = new int[pilha.Length];
+//             int topoAux1 = -1, topoAux2 = -1;
+
+//             // Transfere elementos para pilhaAux1
+//             while (topo != -1)
+//             {
+//                 pilhaAux1[++topoAux1] = Pop();
+//             }
+
+//             // Transfere elementos para pilhaAux2
+//             while (topoAux1 != -1)
+//             {
+//                 pilhaAux2[++topoAux2] = pilhaAux1[topoAux1--];
+//             }
+
+//             // Transfere de volta para a pilha original
+//             while (topoAux2 != -1)
+//             {
+//                 Push(pilhaAux2[topoAux2--]);
+//             }
+//         }
+
 //         // Método principal
 //         public static void Main()
 //         {
-//             // Demonstração de operações na pilha
-
-//             // Adicionando elementos à pilha
+//             // Adiciona elementos à pilha
 //             Push(10);
 //             Push(20);
 //             Push(30);
-//             Push(40);
-//             Push(50);
 
-//             Console.WriteLine("\nPilha após inserção dos elementos:");
+//             Console.WriteLine("Pilha original:");
 //             ListarPilha();
 
-//             // Verificando o topo da pilha
-//             Console.WriteLine($"\nTopo da pilha: {Peek()}");
+//             // Reverte a pilha
+//             Reverter();
 
-//             // Removendo elementos da pilha
-//             Console.WriteLine($"\nRemovendo valor: {Pop()}");
-//             Console.WriteLine($"\nRemovendo valor: {Pop()}");
-
-//             Console.WriteLine("\nPilha após remoções:");
+//             Console.WriteLine("\nPilha após reversão:");
 //             ListarPilha();
 
-//             // Verificando se a pilha está vazia
-//             Console.WriteLine($"\nA pilha está vazia? {IsEmpty()}");
-
-//             // Continuando as operações
-//             Push(60);
-//             Push(70);
-
-//             Console.WriteLine("\nPilha após novas inserções:");
-//             ListarPilha();
+            
 //         }
 //     }
 // }
