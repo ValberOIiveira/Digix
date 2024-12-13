@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioClasseAbstrata2", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_18_OO_ModificadoresdeAcesso", "Aula_18_OO_ModificadoresdeAcesso\Aula_18_OO_ModificadoresdeAcesso.csproj", "{2394A7DC-B885-480E-9285-5544B8862F1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_18_Encapsulamento", "Aula_18_Encapsulamento\Aula_18_Encapsulamento.csproj", "{CF7B7AA2-3062-442C-BAC0-C801F4111C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio_OO_Banco", "Desafio_OO_Banco\Desafio_OO_Banco.csproj", "{CCAD9E95-43D2-4C47-AED9-1571C56C3FEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{2394A7DC-B885-480E-9285-5544B8862F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2394A7DC-B885-480E-9285-5544B8862F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2394A7DC-B885-480E-9285-5544B8862F1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7B7AA2-3062-442C-BAC0-C801F4111C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7B7AA2-3062-442C-BAC0-C801F4111C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7B7AA2-3062-442C-BAC0-C801F4111C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7B7AA2-3062-442C-BAC0-C801F4111C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAD9E95-43D2-4C47-AED9-1571C56C3FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAD9E95-43D2-4C47-AED9-1571C56C3FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAD9E95-43D2-4C47-AED9-1571C56C3FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAD9E95-43D2-4C47-AED9-1571C56C3FEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
