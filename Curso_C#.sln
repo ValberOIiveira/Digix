@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_19_OO_Interface", "Aul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_19_OO_Relacoes", "Aula_19_OO_Relacoes\Aula_19_OO_Relacoes.csproj", "{1EC0D454-60C8-4F11-AC54-86B85D26C099}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_20_OO_UML", "Aula_20_OO_UML\Aula_20_OO_UML.csproj", "{DF90B540-B64A-4830-B512-A8E72F133F51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{1EC0D454-60C8-4F11-AC54-86B85D26C099}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EC0D454-60C8-4F11-AC54-86B85D26C099}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EC0D454-60C8-4F11-AC54-86B85D26C099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF90B540-B64A-4830-B512-A8E72F133F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF90B540-B64A-4830-B512-A8E72F133F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF90B540-B64A-4830-B512-A8E72F133F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF90B540-B64A-4830-B512-A8E72F133F51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
