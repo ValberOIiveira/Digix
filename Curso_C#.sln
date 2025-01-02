@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula_20_OO_UML", "Aula_20_O
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio-Biblioteca", "Desafio-Biblioteca\Desafio-Biblioteca.csproj", "{6926FC66-99AC-4FA2-AA21-071607318B0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaDeExercicios02_01", "ListaDeExercicios02_01\ListaDeExercicios02_01.csproj", "{76C3C315-2DBB-4016-A45C-36CD29ABD843}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{6926FC66-99AC-4FA2-AA21-071607318B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6926FC66-99AC-4FA2-AA21-071607318B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6926FC66-99AC-4FA2-AA21-071607318B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C3C315-2DBB-4016-A45C-36CD29ABD843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C3C315-2DBB-4016-A45C-36CD29ABD843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C3C315-2DBB-4016-A45C-36CD29ABD843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C3C315-2DBB-4016-A45C-36CD29ABD843}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
