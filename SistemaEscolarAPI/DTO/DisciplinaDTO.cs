@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 
 namespace SistemaEscolarAPI.DTO
 {
-    public class DisciplinaDTO
+    public class DisciplinaDto
     {
-        public string Nome { get; set; }
-        public string Curso { get; set; }
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public int CursoId { get; set; }
     }
+
 }

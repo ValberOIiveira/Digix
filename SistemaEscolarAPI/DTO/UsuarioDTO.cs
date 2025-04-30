@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace SistemaEscolarAPI.DTO
 {
-    public class AlunoDto
+    public class UsuarioDTO
     {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public int CursoId { get; set; }
+        public string Username { get; set; }
+        public string Role { get; set; }
+        
     }
-
 }
