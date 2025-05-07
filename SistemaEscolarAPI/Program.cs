@@ -1,39 +1,56 @@
 using Microsoft.EntityFrameworkCore;
+using SistemaEscolarAPI.Models;
+using SistemaEscolarAPI.DTO;
 using SistemaEscolarAPI.Database;
+using FluentValidation.AspNetCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.OpenApi.Models;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configura o DbContext com PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection")));
 
-// Configura os controllers e JSON para evitar problemas com ciclos de referência
-builder.Services.AddControllers().AddJsonOptions(options =>
+
+builder.Services.AddControllers();
+builder.Services.AddAuthorization();
+builder.Services.AddSwaggerGen(c => 
 {
-    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sistema Escolar API", Version = "v1" });
 });
 
-// Adiciona Swagger
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+
+        var secretKey = builder.Configuration["ConnectionStrings:TokenPassword"];
+        options.TokenValidationParameters = new TokenValidationParameters {
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
+            ValidateIssuer = false,
+            ValidateAudience = false
+
+        };
+    });
 
 var app = builder.Build();
 
-// Middleware Swagger
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
-// Middleware de log de requisições
-app.Use(async (context, next) =>
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.UseStaticFiles();
+app.UseRouting();
+app.UseHttpsRedirection();
+
+app.MapGet("/", context =>
 {
-    Console.WriteLine($"[Request] {context.Request.Method} {context.Request.Path}");
-    await next.Invoke();
+    context.Response.Redirect("/index.html");
+    return Task.CompletedTask;
 });
 
-// Mapeia os controllers
 app.MapControllers();
-
 app.Run();
